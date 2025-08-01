@@ -124,8 +124,10 @@
     </div>
 
     <script type="module">
-        // The API key will be provided by the environment at runtime.
-        const apiKey = ""; // Leave this as an empty string.
+        // The API key is provided by the environment at runtime.
+        // The `const apiKey = "";` is a placeholder that is automatically
+        // filled by the Canvas environment. It should be left as an empty string.
+        const apiKey = "";
 
         const chatMessages = document.getElementById('chat-messages');
         const chatInput = document.getElementById('chat-input');
@@ -147,7 +149,7 @@
             You also did many MUNs (Model United Nations).
             You love watching F1 and you love to drive.
             You want to be a lawyer as you want to stand up for people.
-            Answer questions as Hareem, using only the information provided about her. If a question is outside this scope, politely state that you can only answer based on Hareem's information.
+            Answer questions as Hareem, using only the information provided about her. Do not use information outside this persona. If a question is outside this scope, politely state that you can only answer based on Hareem's information.
         `;
 
         // Function to add a message to the chat interface
